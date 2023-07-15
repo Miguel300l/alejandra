@@ -1,10 +1,10 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
-import { Home } from "./components/Pages/Home";
-import { About } from "./components/Pages/About";
-import { Blog } from "./components/Pages/Blog";
-import { Contact } from "./components/Pages/Contact";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Carousel from './components/Pages/Carousel';
+import { Album } from "./components/Pages/Album";
+import { Pensamientos } from "./components/Pages/Pensamientos";
+
 
 function App() {
   return (
@@ -14,14 +14,13 @@ function App() {
 
         <div className="pages">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Carousel />} />
+            <Route path="/album" element={<Album />} />
+            <Route path="/pensamientos" element={<Pensamientos />} />
           </Routes>
         </div>
       </Router>
-  </>
+    </>
   );
 }
 

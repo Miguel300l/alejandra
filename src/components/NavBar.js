@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Horizontal from "../assets/logo alejandra.png";
 import "./NavBar.css";
 
 function NavBar() {
@@ -11,11 +12,13 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CodeBucks
-            <i className="fas fa-code"></i>
+
+            <img src={Horizontal} alt="Logo" className="img-logo" width="200" style={{ marginTop: -30 }} />
+
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -24,40 +27,29 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Home
+                INICIO
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/Album"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                About
+                ALBUM
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/Pensamientos"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/contact"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Contact Us
+                PENSAMIENTOS
               </NavLink>
             </li>
           </ul>

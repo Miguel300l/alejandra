@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #1f5156;
+  background-color: #b93cde;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .nav-logo {
-  color: #f5b921;
+  color: #d06aff;
   align-items: center;
   margin-left: 20px;
   cursor: pointer;
@@ -43,6 +43,7 @@
   height: 100%;
   border-bottom: 3px solid transparent;
 }
+
 .fa-code {
   margin-left: 1rem;
 }
@@ -63,12 +64,12 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #ffdd40;
+  background: #ff81ff;
 }
 
 .nav-item .active {
-  color: #ffdd40;
-  border: 1px solid #ffdd40;
+  color: #faf7fc;
+  border: 1px solid #ff81ff;
 }
 
 .nav-icon {
@@ -95,10 +96,12 @@
     transition: all 0.5s ease;
     z-index: 1;
   }
+
   .nav-item .active {
     color: #ffdd40;
     border: none;
   }
+
   .nav-links {
     padding: 1.5rem;
     width: 100%;
